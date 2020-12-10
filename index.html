@@ -8,12 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/countdown.scss">
 </head>
 
 <body>
     
     <section>
-        <div class="container landing-bg">
+        <!--Sticky Badge-->
+        <a href="#top">
+        <div class="badge">
+            <img src="assets/img/badge.png">
+        </div>
+        </a>
+        <!--Sticky Badge Ends-->
+
+        <div class="container landing-bg" id="top">
             <div class="a"></div>
             <div id="circle"></div>
         </div>
@@ -24,6 +33,149 @@
         <!--Dates (Feb 18-20)-->
         <div class="container dates">
             <div>18-20 February, 2021</div>
+        </div>
+        <!--Countdown
+        <div class="wrapper">
+            <div class="time-part-wrapper">
+                <div class="time-part days tens">
+                    <div class="digit-wrapper">
+                        <span class="digit">1</span>
+                    </div>
+                </div>
+                <div class="time-part days ones">
+                    <div class="digit-wrapper">
+                        <span class="digit">3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="time-part-wrapper">
+                <div class="time-part hours tens">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                    </div>
+                </div>
+                <div class="time-part hours ones">
+                    <div class="digit-wrapper">
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                        <span class="digit">0</span>
+                        <span class="digit">9</span>
+                        <span class="digit">8</span>
+                        <span class="digit">7</span>
+                        <span class="digit">6</span>
+                        <span class="digit">5</span>
+                    </div>
+                </div>
+            </div>
+            <div class="time-part-wrapper">
+                <div class="time-part minutes tens">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">5</span>
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                    </div>
+                </div>
+                <div class="time-part minutes ones">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">9</span>
+                        <span class="digit">8</span>
+                        <span class="digit">7</span>
+                        <span class="digit">6</span>
+                        <span class="digit">5</span>
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="time-part-wrapper">
+                <div class="time-part seconds tens">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">5</span>
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                    </div>
+                </div>
+                <div class="time-part seconds ones">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">9</span>
+                        <span class="digit">8</span>
+                        <span class="digit">7</span>
+                        <span class="digit">6</span>
+                        <span class="digit">5</span>
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="time-part-wrapper">
+                <div class="time-part hundredths tens">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">9</span>
+                        <span class="digit">8</span>
+                        <span class="digit">7</span>
+                        <span class="digit">6</span>
+                        <span class="digit">5</span>
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                    </div>
+                </div>
+                <div class="time-part hundredths ones">
+                    <div class="digit-wrapper">
+                        <span class="digit">0</span>
+                        <span class="digit">9</span>
+                        <span class="digit">8</span>
+                        <span class="digit">7</span>
+                        <span class="digit">6</span>
+                        <span class="digit">5</span>
+                        <span class="digit">4</span>
+                        <span class="digit">3</span>
+                        <span class="digit">2</span>
+                        <span class="digit">1</span>
+                        <span class="digit">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        Countdown Ends-->
+        <!--Countdown-->
+        <div class="countdown container">
+            <iframe
+                src="http://free.timeanddate.com/countdown/i7l0w5nd/n438/cf12/cm0/cu4/ct2/cs1/ca0/co0/cr0/ss0/cace6fcff/cpcfff/pct/tcfff/fn3/fs200/szw576/szh243/iso2021-02-18T18:00:00"
+                allowTransparency="true" frameborder="0" width="377" height="89"></iframe>
+        </div>
+        <div class="invisible container"></div>
+        <!--Countdown Ends-->
+
+        <!--Button-->
+        <div class="button container">
+            <a class="white" href="#">
+                <p><span class="bg"></span><span class="base"></span><span class="text">Register Now</span></p>
+            </a>
         </div>
     </section>
 
