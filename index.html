@@ -163,12 +163,61 @@
         </div>
         Countdown Ends-->
         <!--Countdown-->
-        <div class="countdown container">
+        <!-- <div class="countdown container">
             <iframe
                 src="http://free.timeanddate.com/countdown/i7l0w5nd/n438/cf12/cm0/cu4/ct2/cs1/ca0/co0/cr0/ss0/cace6fcff/cpcfff/pct/tcfff/fn3/fs200/szw576/szh243/iso2021-02-18T18:00:00"
                 allowTransparency="true" frameborder="0" width="377" height="89"></iframe>
+        </div> -->
+        <div class="countdown">
+            <table>
+                <tr class="info">
+                    <td id = "days">69</td>
+                    <td id = "hours">420</td>
+                    <td id = "minutes">69</td>
+                    <td id = "seconds">420</td>
+                </tr>
+                <tr>
+                    <td>Days</td>
+                    <td>Hours</td>
+                    <td>Minutes</td>
+                    <td>Seconds</td>
+                </tr>
+            </table>
+            <script>//coundown script
+                function countdown(){
+                    var now = new Date();
+                    var eventDate = new Date(2021, 1, 18);//Year, index of month, date
+
+                    var currentTime = now.getTime();
+                    var eventTime = eventDate.getTime();
+
+                    var remTime = eventTime-currentTime;
+
+                    var s = Math.floor(remTime/1000);
+                    var m = Math.floor(s/60);
+                    var h = Math.floor(m/60);
+                    var d = Math.floor(h/24);
+                    
+                    h%=24;
+                    m%=60;
+                    s%=60;
+
+                    h = (h<10) ? "0"+ h : h;
+                    m = (m<10) ? "0"+ m : m;
+                    s = (s<10) ? "0"+ s : s;
+
+                    document.getElementById("days").innerHTML = d;
+                    document.getElementById("hours").innerHTML = h;
+                    document.getElementById("minutes").innerHTML = m;
+                    document.getElementById("seconds").innerHTML = s;
+
+                    setTimeout(countdown, 1000);
+                }
+
+                countdown();
+            </script>
         </div>
-        <div class="invisible container"></div>
+        <!-- <div class="invisible container"></div> -->
         <!--Countdown Ends-->
 
         <!--Button-->

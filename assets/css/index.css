@@ -125,20 +125,20 @@ body {
   left:0;
   right:0;
   margin: 0 auto;
-  top: 180px;
+  top: 5rem;
 }
 
 .neon {
   font-family: neon;
   color: #FB4264;
-  font-size: 11em;
+  font-size: 6em;
   text-shadow: 0 0 3vw #F40A35;
 }
 
 .flux {
   font-family: neon;
   color: #426DFB;
-  font-size: 11em;
+  font-size: 7em;
   text-shadow: 0 0 3vw #2356FF;
 }
 
@@ -194,10 +194,10 @@ body {
 .dates{
   position: absolute;
   text-align: center;
-  top: 580px;
+  top: 10em;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size:3em;
+  font-size:2.5em;
 	letter-spacing:0.1em;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -519,17 +519,19 @@ body {
  */
 
  .countdown{
-   display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  position: absolute;
-  left:0;
-  right:0;
-  margin: 0 auto;
-  top: 625px;
+	font-size: 1.5em;
+	position: absolute;
+	text-align: center;
+	top: 25em;
+	left: 50%;
+	transform: translate(-50%, -50%);
  }
 
- .invisible{
+ .countdown td{
+	padding: 0 15px
+ }
+
+ /* .invisible{
    display: table-cell;
   text-align: center;
   vertical-align: middle;
@@ -540,7 +542,7 @@ body {
   top: 625px;
   width:377px;
   height:89px;
- }
+ } */
 
  /*BUTTON*/
  .button {
@@ -675,9 +677,61 @@ body {
 }
  
 .badge img{
+  display: none;
   position: fixed;
   top:0;
   right:50px;
   z-index: 10000;
-  width: 150px;
+  width: 7em;
+}
+
+
+ @media only screen and (min-width: 1050px){ /*elements properties when display size is a desktop(>1050px) */
+	
+	.neon {
+		font-family: neon;
+		color: #FB4264;
+		font-size: 12em;
+		text-shadow: 0 0 3vw #F40A35;
+	}
+	
+	.flux {
+		font-family: neon;
+		color: #426DFB;
+		font-size: 12em;
+		text-shadow: 0 0 3vw #2356FF;
+	}
+	.dates{
+		position: absolute;
+		text-align: center;
+		top: 12em;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size:3em;
+		  letter-spacing:0.1em;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: white;
+		text-shadow: 
+			  5px 5px #17009c;
+	  }
+	  /* .countdown{
+		align-items: center;
+		margin-left: 33%;
+		top: 40rem;
+		font-size: 2em;
+
+	  } */
+	  .button{
+		padding: 2rem;
+		}
+	.badge img{
+		display: block;
+	}
+
+	.countdown{
+	top: 28.5em;
+	}
+	
+	  
 }
