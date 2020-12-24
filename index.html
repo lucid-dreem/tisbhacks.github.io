@@ -7,46 +7,13 @@
     <title>TISBHacks 2021</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="assets/css/index.css">
-    
+    <link rel="stylesheet" href="assets/css/countdown.scss">
 </head>
 
 <body>
-    
     <section>
-        <div class="nav-container">
-            <header>
-                <a href="index.html">TISB HACKS</a>
-                <nav>
-                    <ul>
-                        <li><a href="#" onclick="scrollToAbout()">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Themes</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">Prizes</a></li>
-                        <li><a href="#">Judges</a></li>
-                        <li><a href="#">Sponsors</a></li>
-                        <li><a href="#">Rules</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <script>
-                function scrollToAbout(){
-                    console.log("sgfasdfg");
-                    gsap.to(window, {duration: 1, scrollTo:"#about"});
-                }
-            </script>
-        </div>
-        <!--Sticky Badge-->
-        <a href="#top">
-        <div class="badge">
-            <img src="assets/img/badge.png">
-        </div>
-        </a>
-        <!--Sticky Badge Ends-->
-
         <div class="container landing-bg" id="top">
             <div class="a"></div>
             <div id="circle"></div>
@@ -75,7 +42,7 @@
                     <td>Seconds</td>
                 </tr>
             </table>
-            <script src="assets/js/countdown.js"></script>
+            
         </div>
         <!--Countdown Ends-->
         <!--Button-->
@@ -85,21 +52,211 @@
             </a>
         </div>
     </section>
-    <div id="particles-js">
-        <div class="about" id = "about">
-        <center><h1>About</h1></center>
-        <hr>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto sunt maxime, adipisci autem amet alias quidem quia distinctio, eveniet deleniti. Ratione, reprehenderit aspernatur magnam sit in deserunt eaque suscipit eveniet architecto iste molestias voluptatibus. Aliquam totam rem aperiam assumenda molestias dolores consequatur nisi officiis neque quo sed, nemo alias! <br></p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quae earum ab quisquam laborum officiis deleniti quaerat mollitia eaque minima consequuntur, minus sequi illo accusamus amet optio illum hic itaque consequatur dicta eligendi rem, debitis sint! Commodi vero excepturi accusamus eligendi officiis cumque voluptatibus porro ex deleniti? Distinctio repudiandae quidem possimus sit repellendus quasi amet omnis alias esse, asperiores quae id excepturi vitae autem velit? In impedit veniam nisi voluptas iure totam tempora delectus deleniti natus nemo, minus asperiores obcaecati fuga ab. Doloribus voluptates debitis ad voluptatum deserunt consectetur labore facere, quaerat aperiam voluptas minus exercitationem enim! Laborum, officia magnam.</p>
-    </div>
-    </div>
 
-<script src= 
-"particles.js-master/particles.js"> 
-</script> 
-<script src= 
-"/particles.js-master/demo/js/app.js"> 
-</script> 
+    <!--Nav-->
+    <section>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#about" onclick="closeNav()">About</a>
+              <a href="#faq" onclick="closeNav()">FAQ</a>
+              <a href="#" onclick="closeNav()">Clients</a>
+              <a href="#" onclick="closeNav()">Contact</a>
+            </div>
+        </div>
+        <div class="hamburger-container">
+            <span class="hamburger" onclick="openNav()">&#9776;</span>
+        </div>
+    </section>
 
+    <!--Themes-->
+    <section id="themes">
+        <div class="section-title container">
+            <div class="tapered1 inner-title">Themes</div>
+        </div>
+        <div class="theme-content">
+                <div class="grid-item health">
+                    <img src="assets/img/health.svg">
+                    <h1>Healthcare</h1>
+                </div>
+                <div class="grid-item community">
+                    <img src="assets/img/community.svg">
+                    <h1>Community</h1>
+                </div>
+                <div class="grid-item environment">
+                    <img src="assets/img/environment.svg">
+                    <h1>Environment</h1>
+                </div>
+                <div class="grid-item open">
+                    <img src="assets/img/open.svg">
+                    <h1>Open Innovation</h1>
+                </div>
+        </div>
+    </section>
+
+    <!--About-->
+    <section id="about">
+        <div class="section-title container">
+            <div class="tapered2 inner-title">About TISBHacks</div>
+        </div>
+        <div class='ui'>
+            <div class='ui_box white'>
+              <div class='ui_box__inner'>
+                <h2>
+                  Who Are We? 
+                </h2>
+                <p>And maybe one line of related information</p>
+                <p>If you are interested in knowing more , we will give you an option to re-direct. Otherwise we save on screen real estate.</p>
+              </div>
+            </div>
+            <div class='ui_box white'>
+              <div class='ui_box__inner'>
+                <h2>
+                  What is a Hackathon?
+                </h2>
+                <p>Lorem ipsum dolor sit amet</p>
+
+                <p>Lorem ipsum dolor sit amet. Some more super groovy information.</p>
+              </div>
+            </div>
+            <div class='ui_box white'>
+              <div class='ui_box__inner'>
+                <h2>
+                  Why TISBHacks?
+                </h2>
+                <p>Lorem ipsum dolor sit amet</p>
+                <p>Lorem ipsum dolor sit amet. Some more super groovy information about this stat.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQ-->
+    <div class="faq-wrapper">
+    <section id="faq" class="faq">
+        <div class="section-title container">
+            <div class="tapered1 inner-title">FAQs</div>
+        </div>
+        <div class="rt-container">
+                <div class="col-rt-12">
+                    <div class="Scriptcontent">
+    
+                        <ul class="horizontal-accordion">
+    
+                        <label for="one">
+                            <li class="item">
+                            <input checked type="radio" name="accordion" id="one">
+    
+                            <div class="item--container">
+                                <header class="item--header">
+                                <span class="item--header--icon">Dates</span>
+                                <h4 class="item--header--title">When is TISBHacks?</h4>
+                                </header>
+                                <p>18-20 February</p>
+                                <footer class="item--footer">
+                                <a href="#"><i class="fa fa-angle-right"></i>En savoir plus</a>
+                                </footer>
+                            </div>
+    
+                            </li>
+                        </label>
+    
+    
+                        <label for="two">
+                            <li class="item">
+                            <input type="radio" name="accordion" id="two">
+    
+                            <div class="item--container">
+                                <header class="item--header">
+                                <span class="item--header--icon">Platform</span>
+                                <h4 class="item--header--title">Design</h4>
+                                </header>
+                                <p>Lorem ipsum dolor sit amet welcome to this party I don't know the rest of this.</p>
+                                <footer class="item--footer">
+                                <a href="#"><i class="fa fa-angle-right"></i>En savoir plus</a>
+                                </footer>
+                            </div>
+                            </li>
+                        </label>
+    
+                        <label for="three">
+                            <li class="item">
+                            <input type="radio" name="accordion" id="three">
+    
+                            <div class="item--container">
+                                <header class="item--header">
+                                <span class="item--header--icon">Eligibility</span>
+                                <h4 class="item--header--title">Site internet</h4>
+                                </header>
+                                <p>Lorem ipsum dolor sit amet welcome to this party I don't know the rest of this.</p>
+                                <footer class="item--footer">
+                                <a href="#"><i class="fa fa-angle-right"></i>En savoir plus</a>
+                                </footer>
+                            </div>
+                            </li>
+                        </label>
+    
+                        <label for="four">
+                            <li class="item">
+                            <input type="radio" name="accordion" id="four">
+    
+                            <div class="item--container">
+                                <header class="item--header">
+                                <span class="item--header--icon">Price</span>
+                                <h4 class="item--header--title">Développement</h4>
+                                </header>
+                                <p>Lorem ipsum dolor sit amet welcome to this party I don't know the rest of this.</p>
+                                <footer class="item--footer">
+                                <a href="#"><i class="fa fa-angle-right"></i>En savoir plus</a>
+                                </footer>
+                            </div>
+                            </li>
+                        </label>
+
+                        <label for="five">
+                            <li class="item">
+                            <input type="radio" name="accordion" id="five">
+    
+                            <div class="item--container">
+                                <header class="item--header">
+                                <span class="item--header--icon">Swag</span>
+                                <h4 class="item--header--title">Développement</h4>
+                                </header>
+                                <p>Lorem ipsum dolor sit amet welcome to this party I don't know the rest of this.</p>
+                                <footer class="item--footer">
+                                <a href="#"><i class="fa fa-angle-right"></i>En savoir plus</a>
+                                </footer>
+                            </div>
+                            </li>
+                        </label>
+
+                        <label for="six">
+                            <li class="item">
+                            <input type="radio" name="accordion" id="six">
+    
+                            <div class="item--container">
+                                <header class="item--header">
+                                <span class="item--header--icon">Other</span>
+                                <h4 class="item--header--title">Développement</h4>
+                                </header>
+                                <p>Lorem ipsum</p>
+                                <footer class="item--footer">
+                                <a href="#"><i class="fa fa-angle-right"></i>En savoir plus</a>
+                                </footer>
+                            </div>
+                            </li>
+                        </label>
+    
+                        </ul>
+    
+    
+                </div>
+            </div>
+        </div>
+             
+    </section>
+</div>
+    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/countdown.js"></script>
 </body>
 </html>
