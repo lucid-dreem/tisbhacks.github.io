@@ -1,7 +1,7 @@
 
 #circle {
 	width: 95vw;
-	height: 665px;
+	height: 100vh;
 top:0;
   left:0;
   right:0;
@@ -74,7 +74,7 @@ top:0;
   background-size: 32px 32px;
   overflow:hidden;
   width:100vw;
-  height:665px;
+  height:100vh;
   margin:-10px;
  
 }
@@ -130,14 +130,14 @@ body {
 .neon {
   font-family: neon;
   color: #FB4264;
-  font-size: 7em;
+  font-size: 6em;
   text-shadow: 0 0 3vw #F40A35;
 }
 
 .flux {
   font-family: neon;
   color: #426DFB;
-  font-size: 7em;
+  font-size: 6em;
   text-shadow: 0 0 3vw #2356FF;
 }
 
@@ -194,7 +194,7 @@ body {
 .dates{
   position: absolute;
   text-align: center;
-  top: 10em;
+  top:10em;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size:2.5em;
@@ -216,7 +216,7 @@ body {
  }
 
  .countdown td{
-	padding: 0 15px
+	padding: 0 15px;
  }
 
  /*BUTTON*/
@@ -507,7 +507,7 @@ body {
 	text-align: center;
 	width: 100%;
 	height: 300px;
-	color: #3d3d3d;
+	color: #d4e2ff;
   }
   .horizontal-accordion label {
 	margin: 0;
@@ -532,7 +532,6 @@ body {
 	height: 100%;
 	font-size: 14px;
 	text-align: center;
-	background: #FFFFFF;
   }
   .horizontal-accordion .item .item--container {
 	cursor: pointer;
@@ -541,7 +540,7 @@ body {
 	width: 140px;
 	height: 100%;
 	padding: 0;
-	background: #3d3d3d;
+	background: white;
   }
   .horizontal-accordion .item .item--container .item--header {
 	transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
@@ -583,7 +582,6 @@ body {
 	transform: translateY(40px);
   }
   .horizontal-accordion .item .item--container .item--footer a {
-	color: #fff;
 	text-decoration: none;
   }
   .horizontal-accordion .item .item--container .item--footer a i.fa {
@@ -593,7 +591,7 @@ body {
 	cursor: default;
 	width: 200px;
 	padding: 20px;
-	background: white;
+	background: #3d3d3d;
   }
   .horizontal-accordion .item input[name="accordion"]:checked + .item--container .item--header {
 	transform: translateY(0px);
@@ -604,7 +602,7 @@ body {
 
   .horizontal-accordion .item input[name="accordion"]:checked + .item--container .item--header .item--header--icon {
 	transform: scale(1);
-	color:black;
+	color:white;
   }
 
   .horizontal-accordion .item input[name="accordion"]:checked + .item--container .item--description {
@@ -618,7 +616,7 @@ body {
   }
 
 .horizontal-accordion .item input[name="accordion"]:checked + .item--container p {
-	color: #b6b6b6;
+	color: #d4e2ff;
 	padding-top: 30px;
 	visibility: visible;
 }
@@ -628,7 +626,7 @@ body {
 }
   
 .item--container span{
-	color:#b3dacb;
+	color:black;
 	font-size: 20px;
 }
 
@@ -654,22 +652,6 @@ body {
 .grid-item img{
 	width:50%;
 	margin-top:20px;
-}
-
-.health{
-	background-color: rgb(255, 240, 107);
-}
-
-.community{
-	background-color: rgb(255, 177, 88);
-}
-
-.environment{
-	background-color: rgb(255, 177, 88);
-}
-
-.open{
-	background-color: rgb(255, 240, 107);
 }
 
 
@@ -718,4 +700,23 @@ body {
 	.theme-content{
 		grid-template-columns: 50% 50%;
 	}
+}
+
+@media screen and (min-height: 772px) {
+	.name{
+		top:12rem;
+	}
+
+	.dates{
+		top:14em;
+	}
+
+	.countdown{
+		top: 26.5em;
+	}
+
+	.button{
+		top: 42.5em;
+	}
+
 }
