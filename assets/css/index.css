@@ -654,6 +654,22 @@ body {
 	margin-top:20px;
 }
 
+/*Sponsors*/
+.sponsor-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sponsor-grid-item {
+  text-align: center;
+}
+
+.sponsor-grid-item img{
+	width:90%;
+}
+
 
 /*Media Queries*/
 @media only screen and (min-width:730px){
