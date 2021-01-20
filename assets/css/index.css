@@ -670,6 +670,9 @@ body {
 	width:90%;
 }
 
+a{
+	outline: 0;
+}
 
 /*Media Queries*/
 @media only screen and (min-width:730px){
@@ -733,6 +736,18 @@ body {
 
 	.button{
 		top: 42.5em;
+	}
+
+}
+
+@media screen and (max-width: 1316px) {
+
+	.sponsor-grid-container{
+		grid-template-columns: auto;
+		width: 50%;
+	}
+	.sponsor-grid-item{
+		margin-bottom: 15px;
 	}
 
 }
