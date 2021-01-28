@@ -486,6 +486,10 @@ body {
 	color: #d4e2ff;
 }
 
+.ui_box__inner p a{
+	color:#88a2c9;
+}
+
 /*FAQ*/
 
 .faq-wrapper{
@@ -672,6 +676,26 @@ body {
 
 a{
 	outline: 0;
+}
+
+/*Events*/
+.event-grid-container {
+	display: grid;
+	width:60%;
+	margin: 0 auto;
+	grid-template-columns: 30% 70%;
+	background-color: #fff;
+	padding: 10px;
+  }
+.event-grid-item {
+	color: #000;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.event-grid-container .img{
+	background-color: rgba(255, 0, 0, 0.8);
 }
 
 /*Media Queries*/
