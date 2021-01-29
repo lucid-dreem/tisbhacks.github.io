@@ -11,6 +11,7 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/countdown.scss">
+    
 </head>
 
 <body>
@@ -259,9 +260,8 @@
         </div>     
     </section>
     </div>
-
-    <!--Events
-    <section id="events">
+    <!-- Events -->
+    <!-- <section id="events">
         <div class="section-title container">
             <div class="tapered2 inner-title">Events</div>
         </div>
@@ -275,7 +275,65 @@
                 </div>
               </div>
         </div>
-    </section>-->
+    </section> -->
+    <section id="events">
+        
+        <div class="section-title container">
+            <div class="tapered2 inner-title">Events</div>
+        </div>
+        <div class="accordionContainer">
+            <button class="accordion">
+                <div class="first echo">
+                    <img src="assets/img/echoar.png"><br>
+                   <span> Introduction to EchoAR</span>
+                </div>
+                </button>
+                <div class="panel">
+                    <p style = "color: #2420ff; font-weight: bold; text-align: center;";>How to Build a Cloud-Connected AR/VR App in 15 Minutes or Less</p>
+                    <p>The workshop will show how to quickly create augmented and virtual reality (AR/VR) apps with no technical skills or coding required and scale existing apps by connecting them to the cloud. </p>
+                    <p>Learn how to create real-time cloud-connected AR/VR apps using the echoAR platform. Discover how AR/VR are changing the world through the demonstration of different use cases of 3D applications and live demos of AR/VR experiences. </p> 
+                    <p>Participants are encouraged to bring a laptop and a smartphone. Platforms for experimentation include: Google ARCore, WebXR, Vuforia, Unity-based apps, and more.</p>
+                </div>
+
+                <button class="accordion">
+                <div class="first frc">
+                    <img src="assets/img/FRC.png"><br>
+                   <span> Introduction to Computer-Aided Design</span>
+                </div>
+            </button>
+                <div class="panel">
+                    <p style = "color: #2420ff; font-weight: bold; text-align: center;";>Introduction to Computer-Aided Design </p>
+                <p> This workshop will be an introduction to the basics that you need to know in order to create basic 3D models. 3D models made using Computer-Aided Design softwares are used for a variety of fields including engineering, game design, film and architecture. </p>
+                <p>Learning how to use CAD is an important skill in this digital age and it is a great base in pursuing various future courses.</p>
+                </div>
+
+                <button class="accordion">
+                    <div class="first sash">
+                        <img src="assets/img/sashido.png"><br>
+                       <span> Introduction to Git and Github</span>
+                    </div>
+                </button>
+                <div class="panel">
+                    <p>More information coming soon..</p>                
+                </div>
+                <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+    
+                    for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                        } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                        }
+                    });
+                    }
+            </script>
+        </div>
+    </section>
 
     <!--Sponsors-->
     <section id="sponsors">
